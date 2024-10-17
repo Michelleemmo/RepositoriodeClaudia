@@ -7,26 +7,23 @@
 </head>
 <body>
 	<?php
-$array=array('Doña Lety'=>'11000','Chucho'=>'6700','Doña Irma'=>'7000','Poncho'=>'10000',
+$empleados=array('Doña Lety'=>'11000','Chucho'=>'6700', 'Doña Irma'=>'7000', 'Poncho'=>'10000',
 		'Doña Corintia'=>'8000');
 
-arsort($array);
-foreach ($array as $empleados => $sueldomensual) {
-		echo" El sueldo mensual del $empleados:$sueldomensual";
+foreach ($empleados as $nombre => $sueldomensual) {
+		echo" El sueldo mensual es:$empleados es: $sueldomensual";
 		echo "<br>";
 	}
-	$array += [ "Juan" => 2000, "Lorena" => 7000 ];
-	echo "<p>";
-
+	
+    arsort($empleados);
     
-
-  arsort($array);  
-foreach ($array as $empleados=> $sueldomensual) {
-		echo"El sueldo mensual del $empleados:$sueldomensual";
+foreach ($empleados as $nombre => $sueldomensual) {
+		echo"El sueldo mensual es: $empleados es: $sueldomensual";
 		echo "<br>";
 	}
-	?>
 
+
+	?>
 
 </body>
 </html>
